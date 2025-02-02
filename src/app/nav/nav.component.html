@@ -1,0 +1,50 @@
+
+<header class="shadow-lg fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-3">
+          <div class="logo-container fixed">
+            <div class="text-center">
+              <img class="logoo" src="assets/madangurelogo.png">
+              <img class="logo" src="assets/frontend.png">
+              <img class="logoo" src="assets/doningo.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-9 col-9 text-end">
+          <div class="menu-icon" (click)="openMenu()">
+            <i class="{{menu_icon}}"></i>
+          </div>
+          <div class="desktop_menu" [class.mobile_menu]="menuValue">
+            <ul>
+              <li (click)="closeMenu()" routerLink="/home" >Home</li>
+              <li (click)="closeMenu()" routerLink="/portfolio" >Portfoilio</li>
+              <li (click)="closeMenu()" routerLink="/resume" >Resume</li>
+              <li (click)="closeMenu()" routerLink="/contact" >Contacts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div style="position: absolute; bottom: 5px; right: 10px;" >
+        <a href="https://github.com/donald-madangure" target="_blank" class="">
+            <img src="assets/github.png" alt="" width="20" height="20" class="rounde-circle  me-2">
+           
+          </a>
+          <a href="https://www.linkedin.com/in/donald-madangure-314838ba/" target="_blank" class="">
+            <img src="assets/linkedin1.png" alt="" width="20" height="20" class="rounde-circle  me-2">
+            
+          </a>
+          <a href="https://www.facebook.com/donald.madangure" target="_blank" class="">
+            <img src="assets/facebook.png" alt="" width="20" height="20" class="rounde-circle  me-2">
+            
+          </a>
+          <a href="https://www.instagram.com/donafanmadangure/" target="_blank" class="">
+            <img src="assets/instagram.png" alt="" width="20" height="20" class="rounde-circle  me-2">
+            
+          </a>
+      </div>
+  
+    </div>
+
+  </header>

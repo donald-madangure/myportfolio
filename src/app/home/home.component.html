@@ -1,0 +1,46 @@
+
+<div class="home mt-5 shadow-lg row">
+    <div class="home-content col-4">
+        <h1 class="mt-5">Hi I'm Donald Madangure</h1>
+        <h3>Frontend Web Developer</h3>
+        <p>Frontend developer with strong understanding of frontend frameworks and libraries, for creating  intuitive , engaging web applications.
+            Proven ability to create responsive and interactive user friendly web applications. Proficient in <b>Java</b>, Javascript, Node Js, Typescript, Angular, React Js, Ng Zorro Ant Design, HTML, CSS, Mongo Db, SQL with the 
+            ability to learn new technologies quickly. Committed to delivering high quality efficient code that meets project requirements and client expectations.
+            Seeking to leverage my technical skills and passion for web applications development in a challenging role.
+            </p>
+        <div class="btn-box">
+            <a>Hire Me</a>
+            <a routerLink="/contact">Let's Talk</a>
+        </div>
+
+
+    </div>
+    <div class="home-img col-4">
+        <div class="img-box">
+            <div class="img-item rounde-circle">
+                <img src="assets/profile-remove.jpg" height="">
+            </div>
+        </div>
+    </div>
+    <div class="col-4 border cardd bg-light">
+        <div class="text-center">
+            <h2 class="display-6 mt-2 mb-2 fs-3">Featured Project</h2>
+            <h4 class="display-6 mt-2 mb-2 fs-4">{{featuredProject.name}}</h4>
+        </div>
+
+        <carousel>
+            <div *ngFor="let picture of featuredProject.pictures">
+                <slide class="top1"><img src={{picture}} alt="slide" style="display:block; width: 100%;" ></slide>
+            </div>
+        </carousel>
+        <p class="mt-2 display-6 mb-2 fs-6 text-center">
+            {{featuredProject.summery}}
+        </p>
+        <p class="mt-2 display-6 mb-2 fs-6 text-center"> 
+            <a routerLink="/portfolio" routerLinkActive="text-dark">visit portfolio section to learn more</a>
+        </p>
+    
+</div>
+</div>
+
+
