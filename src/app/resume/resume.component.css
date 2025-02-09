@@ -31,7 +31,7 @@ accordion-group::ng-deep .card-header{
   }
   
   .button span:after {
-    content: "Free";
+    content: "Resume";
     position: absolute;
     opacity: 0;
     top: 0;

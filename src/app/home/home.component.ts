@@ -15,6 +15,6 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle('Donald Madangure - Home')
   }
   ngOnInit(): void {
-    this.featuredProject = this.projectService.GetProjectsById(1);
+    this.featuredProject = this.projectService.GetProjectsById(0);
   }
 }

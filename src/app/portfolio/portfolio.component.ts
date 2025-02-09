@@ -14,7 +14,7 @@ export class PortfolioComponent implements OnInit{
   projects= {} as Project[];
 
   isCollapsed: boolean = true;
-  typescript: boolean = false;
+  rxjs: boolean = false;
   angular: boolean = false;
   javascript: boolean = false;
   python: boolean = false;
@@ -36,7 +36,7 @@ export class PortfolioComponent implements OnInit{
   Filter(){
     let filterTags: Tag[] = [];
 
-    if(this.typescript){
+    if(this.rxjs){
       filterTags.push(Tag.RxJS)
     }
     if(this.angular){
@@ -63,7 +63,7 @@ export class PortfolioComponent implements OnInit{
     if(this.react){
       filterTags.push(Tag.REACT)
     }
-    if(this.python || this.csharp || this.react || this.aspnet || this.nodejs || this.javascript || this.java || this.angular || this.typescript){
+    if(this.python || this.csharp || this.react || this.aspnet || this.nodejs || this.javascript || this.java || this.angular || this.rxjs){
       this.filtering = true;
     }
     else{
@@ -75,7 +75,7 @@ export class PortfolioComponent implements OnInit{
   }
 
   ResetFilters(){
-    this.typescript = false;
+    this.rxjs = false;
     this.angular = false;
     this.javascript = false;
     this.python = false;

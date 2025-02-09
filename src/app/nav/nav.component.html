@@ -1,13 +1,13 @@
 
-<header class="shadow-lg fixed-top">
+<header class="shadow-lg fixed-top mb-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-3 col-3">
           <div class="logo-container fixed">
             <div class="text-center">
-              <img class="logoo" src="assets/madangurelogo.png">
-              <img class="logo" src="assets/frontend.png">
-              <img class="logoo" src="assets/doningo.png">
+              <img class="logoo" src="assets/madangurelogo.png">  
+              <!-- <img class="logo" src="assets/frontend.png"> -->
+              <!-- <img class="logoo" src="assets/doningo.png"> -->            
             </div>
           </div>
         </div>
@@ -17,10 +17,10 @@
           </div>
           <div class="desktop_menu" [class.mobile_menu]="menuValue">
             <ul>
-              <li (click)="closeMenu()" routerLink="/home" >Home</li>
-              <li (click)="closeMenu()" routerLink="/portfolio" >Portfoilio</li>
-              <li (click)="closeMenu()" routerLink="/resume" >Resume</li>
-              <li (click)="closeMenu()" routerLink="/contact" >Contacts</li>
+              <li class="nav-link" (click)="closeMenu()" routerLink="/home" routerLinkActive="navy">Home</li>
+              <li class="nav-link" (click)="closeMenu()" routerLink="/portfolio" routerLinkActive="navy">Portfoilio</li>
+              <li class="nav-link" (click)="closeMenu()" routerLink="/resume" routerLinkActive="navy">Resume</li>
+              <li class="nav-link" (click)="closeMenu()" routerLink="/contact" routerLinkActive="navy">Contacts</li>
             </ul>
           </div>
         </div>
