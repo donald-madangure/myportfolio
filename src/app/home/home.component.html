@@ -1,119 +1,117 @@
-
-    <div class="container" >
-        <div class="container clearfix mt-5 pt-5 mb-5">   
-        
-            
-            <div class="container">
-                <img src="assets/profile-remove.jpg" style="width:300px;height:300x;"
-                class="col-md-6 float-md-end mb-3 ms-md-2 mt-5 
-                 rounded-circle img-fluid img-thumbnail"> 
-            </div>
-            
-            <div class="container mb-5 mt-4 pt-5 text-secondary fs-5">
-                <b>
-                Frontend developer with strong understanding of frontend frameworks and libraries, for creating  intuitive , 
-                engaging web applications. Proven ability to create responsive and interactive user friendly web applications, 
-                with the ability to learn new technologies quickly. Committed to delivering high quality efficient code that 
-                meets project requirements and client expectations. Seeking to leverage my technical skills and passion for 
-                web applications development in a challenging role.
-                </b>
-            </div>        
-         
-            <div>
-               <p class="text-center text-warning ">
-                <i class="shadow-lg">Powering dreams with code</i>
-               </p>
-            </div>
-        </div>    
-        
-        <!-- featured projects -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 order-md-1 mb-5 ">
-                <div class="card shadow-lg">
-                    <div class="text-center card-header">
-                        <h2 class="display-6 mt-2 mb-2 fs-3">Sample Project</h2>
-                        <h4 class="display-6 mt-2 mb-2 fs-4">{{featuredProject.name}}</h4>
-                    </div>
+<div class="container mt-5 pt-5 mb-5">
+    <div class="mt-5 pt-5 pb-5 bg-light shadow rounded">
+        <div class="container" >
+            <div class="container clearfix mb-5">               
                 
-                    <carousel class="card-bordy">
-                        <div *ngFor="let picture of featuredProject.pictures">
-                            <slide><img src={{picture}} alt="slide" style="display:block; width: 100%;" ></slide>
+                <div class="container">
+                    <img src="assets/profile-remove.jpg" style="width:300px;height:300x;"
+                    class="col-md-6 float-md-end mb-3 ms-md-2
+                    rounded-circle img-fluid img-thumbnail"> 
+                </div>
+                
+                <div class="container mt-5 text-start fs-5">                    
+                    <i>
+                        Skilled in building responsive, intuitive single-page applications using modern frameworks and libraries.
+                        Adept at crafting user-friendly interfaces, quickly mastering new technologies, and delivering efficient, 
+                        high-quality code aligned with project goals. Eager to apply technical expertise and passion for development in dynamic,
+                        challenging environments.
+                    </i>                    
+                </div>      
+                            
+            </div>   
+           <hr>
+            
+            <!-- featured projects -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-md-1 mb-5 ">
+                    <div class="card shadow-lg">
+                        <div class="text-center card-header">
+                            <h2 class="display-6 mt-2 mb-2 fs-3 page">Sample Project</h2>
+                            <h4 class="display-6 mt-2 mb-2 fs-4 page">{{featuredProject.name}}</h4>
                         </div>
-                    </carousel>
-                    <div class="card-footer">
-                        <p class="mt-2 display-6 mb-2 fs-6 text-center">
-                            {{featuredProject.summery}}
-                        </p>
-                        <p class="mt-2 display-6 mb-2 fs-6 text-center"> 
-                            <a routerLink="/portfolio" routerLinkActive="text-dark">visit portfolio section to learn more</a>
-                        </p>
+                    
+                        <carousel class="card-bordy">
+                            <div *ngFor="let picture of featuredProject.pictures">
+                                <slide><img src={{picture}} alt="slide" style="display:block; width: 100%;" ></slide>
+                            </div>
+                        </carousel>
+                        <div class="card-footer">
+                            <p class="mt-2 display-6 mb-2 fs-6 text-center">
+                                {{featuredProject.summery}}
+                            </p>
+                            <p class="mt-2 display-6 mb-2 fs-6 text-center"> 
+                                <a class="page" routerLink="/portfolio" routerLinkActive="text-dark">visit portfolio section to learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-2 mb-5">
+                    <p class="mb-4 mt-2 display-6 page">My Tools and Languages ...</p>
+                    <div class="class row">                        
+                        <div class="col-4">
+                            <img src="assets/javascript.png">
+                            <p class="mt-2">Javascript</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/typescript.png" class="img-fluid">
+                            <p class="mt-2">Typescript</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/Java.jpg">
+                            <p class="mt-2">Java</p>
+                        </div>                
+                    </div>
+                    <div class="class row mt-5">                        
+                        <div class="col-4">
+                            <img src="assets/angular.png">
+                            <p class="mt-2">Angular</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/react.png">
+                            <p class="mt-2">React</p>
+                        </div>
+                        <div class="col-4">                    
+                            <img src="assets/ng-zorro.jpg">
+                            <p class="mt-2">NG-ZORRO</p>
+                        </div>                
+                    </div>
+                    <div class="class row mt-5">                        
+                        <div class="col-4">
+                            <img src="assets/Bootstrap.png">
+                            <p class="mt-2">Bootstrap</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/tailwind.png">
+                            <p class="mt-2">Tailwind</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/git.png">
+                            <p class="mt-2">Git</p>
+                        </div>                
+                    </div>
+                    <div class="class row mt-5">                        
+                        <div class="col-4">
+                            <img src="assets/github.png">
+                            <p class="mt-2">Git-Hub</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/docker.jpg">
+                            <p class="mt-2">Docker</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/vscode.jpg">
+                            <p class="mt-2">Vs-Code</p>
+                        </div>                
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 order-md-2 mb-5 text-white">
-                <p class="mb-4 mt-2 display-6">My Tools and Languages ...</p>
-                <div class="class row">                        
-                    <div class="col-4">
-                        <img src="assets/javascript.png">
-                        <p class="mt-2">Javascript</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/typescript.png" class="img-fluid">
-                        <p class="mt-2">Typescript</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/Java.jpg">
-                        <p class="mt-2">Java</p>
-                    </div>                
-                </div>
-                <div class="class row mt-5">                        
-                    <div class="col-4">
-                        <img src="assets/angular.png">
-                        <p class="mt-2">Angular</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/react.png">
-                        <p class="mt-2">React</p>
-                    </div>
-                    <div class="col-4">                    
-                        <img src="assets/ng-zorro.jpg">
-                        <p class="mt-2">NG-ZORRO</p>
-                    </div>                
-                </div>
-                <div class="class row mt-5">                        
-                    <div class="col-4">
-                        <img src="assets/Bootstrap.png">
-                        <p class="mt-2">Bootstrap</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/tailwind.png">
-                        <p class="mt-2">Tailwind</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/git.png">
-                        <p class="mt-2">Git</p>
-                    </div>                
-                </div>
-                <div class="class row mt-5">                        
-                    <div class="col-4">
-                        <img src="assets/github.png">
-                        <p class="mt-2">Git-Hub</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/docker.jpg">
-                        <p class="mt-2">Docker</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/vscode.jpg">
-                        <p class="mt-2">Vs-Code</p>
-                    </div>                
-                </div>
-            </div>
+        </div>     
+        
         </div>
-    </div>     
-    
-    </div>
+      </div>
+</div>
+
 
 
 

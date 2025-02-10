@@ -1,14 +1,14 @@
 
 header{
   padding: 10px;
-  background: linear-gradient(100deg, #0000b6, #959f07);
+  background: linear-gradient(100deg, #000000, #FFA500);
   top: 0;
   z-index: 1000;
 
 }
 .navy{  
   background-color:none; 
-  border-color:none;
+  border-color:none;  
   border-bottom: 3px solid yellow;
   }
 

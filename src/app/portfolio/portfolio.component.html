@@ -2,12 +2,12 @@
 
     <div class="mb-2 mt-5">
         <div class="mt-5">
-            <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed =! isCollapsed">Filter</button>
+            <button class="btn btn-outline-info mb-2 me-2" (click)="isCollapsed =! isCollapsed">Filter</button>
             <button class="btn btn-outline-warning mb-2" (click)="ResetFilters()" [hidden]="!filtering">Reset</button>
         </div>
         
         <div [collapse]="isCollapsed" [isAnimated]="true">
-            <div class="border mb-2 shadow-sm " style="width: 250px;">
+            <div class="mb-2 shadow-sm " style="width: 250px;">
                 <form>
                     <div class="row mx-0">
                         <div class="col text-light">
