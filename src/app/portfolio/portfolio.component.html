@@ -7,11 +7,11 @@
         </div>
         
         <div [collapse]="isCollapsed" [isAnimated]="true">
-            <div class="mb-2 shadow-sm " style="width: 250px;">
+            <div class="mb-2 shadow-sm border border-light rounded" style="width: 250px;">
                 <form>
                     <div class="row mx-0">
                         <div class="col text-light">
-                            <small><b>Languanges:</b></small>
+                            <small class="cont"><b>Languanges:</b></small>
                             <div class="form-group">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)] = "java" (change)="Filter()" name="Java">
@@ -30,9 +30,15 @@
                                     <label class="form-check-label small">RxJS</label>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)] = "typescript" (change)="Filter()" name="Typescript">
+                                    <label class="form-check-label small">Typescript</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="col text-light">
-                            <small><b>Frameworks:</b></small>
+                            <small class="cont"><b>Frameworks:</b></small>
                             <div class="form-group">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)] = "angular" (change)="Filter()" name="Angular">
@@ -47,8 +53,20 @@
                             </div>
                             <div class="form-group">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)] = "nodejs" (change)="Filter()" name="NodeJs">
+                                    <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)] = "ngzorro" (change)="Filter()" name="NGZORRO">
                                     <label class="form-check-label small">NG-ZORRO</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)] = "bootstrap" (change)="Filter()" name="bootstrap">
+                                    <label class="form-check-label small">Bootstrap</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)] = "tailwind" (change)="Filter()" name="tailwind">
+                                    <label class="form-check-label small">Tailwind</label>
                                 </div>
                             </div>
                         </div>

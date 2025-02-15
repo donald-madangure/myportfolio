@@ -17,11 +17,11 @@ export class PortfolioComponent implements OnInit{
   rxjs: boolean = false;
   angular: boolean = false;
   javascript: boolean = false;
-  python: boolean = false;
-  csharp: boolean = false;
+  typescript: boolean = false;
+  bootstrap: boolean = false;
   java: boolean = false;
-  nodejs: boolean = false;
-  aspnet: boolean = false;
+  ngzorro: boolean = false;
+  tailwind: boolean = false;
   react: boolean = false;
   filtering: boolean = false;
 
@@ -45,17 +45,17 @@ export class PortfolioComponent implements OnInit{
     if(this.java){
       filterTags.push(Tag.JAVA)
     }
-    if(this.csharp){
-      filterTags.push(Tag.CSHARP)
+    if(this.typescript){
+      filterTags.push(Tag.Typescript)
     }
-    if(this.nodejs){
+    if(this.ngzorro){
       filterTags.push(Tag.NGZORRO)
     }
-    if(this.aspnet){
-      filterTags.push(Tag.ASPNET)
+    if(this.bootstrap){
+      filterTags.push(Tag.Bootstrap)
     }
-    if(this.python){
-      filterTags.push(Tag.PYTHON)
+    if(this.tailwind){
+      filterTags.push(Tag.TailwindCSS)
     }
     if(this.javascript){
       filterTags.push(Tag.JAVASCRIPT)
@@ -63,7 +63,7 @@ export class PortfolioComponent implements OnInit{
     if(this.react){
       filterTags.push(Tag.REACT)
     }
-    if(this.python || this.csharp || this.react || this.aspnet || this.nodejs || this.javascript || this.java || this.angular || this.rxjs){
+    if(this.tailwind || this.ngzorro || this.react || this.bootstrap || this.typescript || this.javascript || this.java || this.angular || this.rxjs){
       this.filtering = true;
     }
     else{
@@ -78,11 +78,11 @@ export class PortfolioComponent implements OnInit{
     this.rxjs = false;
     this.angular = false;
     this.javascript = false;
-    this.python = false;
-    this.csharp = false;
+    this.ngzorro= false;
+    this.typescript = false;
     this.java = false;
-    this.nodejs = false;
-    this.aspnet = false;
+    this.bootstrap = false;
+    this.tailwind = false;
     this.react = false;
     this.filtering = false;
     

@@ -8,12 +8,12 @@ import { Tag } from '../_models/Tag';
 export class ProjectsService {
 
   projects: Project [] = [
-    {id: 0,name: "Healthcare Analytics Dashboard (Angular + Docker)",summery: 'Product management system app ',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.ANGULAR, Tag.NGZORRO, Tag.RxJS]},
-    {id: 1,name: "Sample Angualr App 2",summery: 'Web app developed using Angular and Node.Js',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.ANGULAR, Tag.RxJS, Tag.NGZORRO]},
-    {id: 2,name: "Sample React App 1",summery: 'Fullstack web app developed using React and Node.JS',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.REACT, Tag.NGZORRO]},
-    {id: 3,name: "Sample React App 2",summery: 'Web API project that was developed for a class project',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.CSHARP, Tag.ASPNET]},
-    {id: 4,name: "Chrom Extensions",summery: 'Developed a chrome extention that tracks the prices of furniture',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.JAVASCRIPT]},
-    {id: 5,name: "Sample Java Project",summery: 'Java project that analyzes stock market and data trends',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.JAVA]},
+    {id: 0,name: "Healthcare Analytics Dashboard (Angular + Docker)",summery: 'Visualisation and informative experience',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.ANGULAR, Tag.NGZORRO, Tag.RxJS]},
+    {id: 1,name: "E - Commerce Platform (CI/CD)",summery: 'Products pages, filters, a shoping cart and chekout process',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.ANGULAR, Tag.RxJS, Tag.NGZORRO]},
+    {id: 2,name: "Fitness Tracker App",summery: 'Tracking workouts, logging progress and settings goals',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.REACT, Tag.Typescript, Tag.TailwindCSS]},
+    {id: 3,name: "Recipe Finder App",summery: 'Search functionality, filtering by ingredients or diet preferences',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.REACT, Tag.JAVASCRIPT, Tag.Bootstrap]},
+    {id: 4,name: "Chrom Extension",summery: 'Developed a chrome extention that tracks live stock prices',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.JAVASCRIPT]},
+    {id: 5,name: "Java Project",summery: 'Java project that analyzes stock market and data trends',description: 'lorem',projectLink: '//.www.github.com',pictures: ["assets/myarea.jpg","assets/mydesk.jpg","assets/myrise.jpg"], tags: [Tag.JAVA]},
   ];
   constructor() { }
 

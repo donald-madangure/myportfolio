@@ -1,11 +1,11 @@
 export class Tag {
     static readonly ANGULAR = new Tag('Angular', 'primary' );
     static readonly RxJS = new Tag('RxJS', 'primary');
-    static readonly PYTHON = new Tag('Python', 'primary');
-    static readonly CSHARP = new Tag('C#', 'primary');
+    static readonly TailwindCSS = new Tag('TailwindCSS', 'primary');
+    static readonly Typescript = new Tag('Typescript', 'primary');
     static readonly JAVA = new Tag('Java', 'primary');
     static readonly NGZORRO = new Tag('NGZORRO', 'primary');
-    static readonly ASPNET = new Tag('ASP.NET', 'primary');
+    static readonly Bootstrap = new Tag('Bootstrap', 'primary');
     static readonly JAVASCRIPT = new Tag('Javascript', 'primary');
     static readonly REACT = new Tag('React', 'primary');
     
